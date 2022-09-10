@@ -1,10 +1,12 @@
+#!/usr/bin/env python
+
 # Script for DNS enumeration
 
 import dns.resolver
 import sys
 
 if len(sys.argv) < 2:
-    print('Usage: dns_recon.py target.com')
+    print('Usage: dns_recon target.com')
     exit(128)
 else:
     target=sys.argv[1]
